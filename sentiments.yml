@@ -1,0 +1,8 @@
+$schema: https://azuremlschemas.azureedge.net/latest/mltable.schema.json
+type: mltable
+paths: [./sentiments.csv]  # Asegúrate de que esto apunta al archivo de datos correcto
+transformations:
+  - read_delimited:
+      delimiter: ","
+      encoding: utf-8
+      header: true
